@@ -12,39 +12,51 @@ var userName = prompt('Can you please enter your name?');
 console.log ('the user name is ' + userName);
 
 //yes/no questions
-var localFoodFan = prompt('Hey ' + userName + ', are you fan of local food?').toLowerCase();
-console.log('Are you fan of local food? User answer: ' + localFoodFan);
-userEntry(localFoodFan);
-if(localFoodFan === 'yes' || localFoodFan === 'y'){
-  alert('Wonderful ' + userName + ', there are a lot of choices here in Seattle');
-} else if (localFoodFan === 'no' || localFoodFan === 'n') {
-  alert('Too bad ' + userName + ', you\'re missing out!');
+function frenchFry(){
+  var localFoodFan = prompt('Hey ' + userName + ', are you fan of local food?').toLowerCase();
+  console.log('Are you fan of local food? User answer: ' + localFoodFan);
+  userEntry(localFoodFan);
+  if(localFoodFan === 'yes' || localFoodFan === 'y'){
+    alert('Wonderful ' + userName + ', there are a lot of choices here in Seattle');
+  } else if (localFoodFan === 'no' || localFoodFan === 'n') {
+    alert('Too bad ' + userName + ', you\'re missing out!');
+  }
 }
 
-var likesBurgers = prompt('Are there delicious local Burgers?').toLowerCase();
-userEntry(likesBurgers);
-if(likesBurgers === 'yes'){
-  alert('I like cheese burgers with double meat!');
-} else {
-  alert('Of course there are!');
+frenchFry();
+
+function cheeseHam(){
+  var likesBurgers = prompt('Are you a fan of Burgers?').toLowerCase();
+  userEntry(likesBurgers);
+  if(likesBurgers === 'yes'){
+    alert('I like cheese burgers with double meat!');
+  } else {
+    alert('Of course there are!');
+  }
 }
 
-var likesMexfood = prompt('Do you like Mexican food?').toLowerCase();
+cheeseHam();
 
-userEntry(likesMexfood);
-
-if(likesMexfood === 'yes'){
-  alert('My favorite dish is enchiladas');
-} else {
-  alert('What do you mean?!');
+function sourCream(){
+  var likesMexfood = prompt('Do you like Mexican food?').toLowerCase();
+  userEntry(likesMexfood);
+  if(likesMexfood === 'yes'){
+    alert('My favorite dish is enchiladas');
+  } else {
+    alert('What do you mean?!');
+  }
 }
 
-var likesFriedfood = prompt('Do you like Fried food?').toLowerCase();
+sourCream();
 
-userEntry(likesFriedfood);
-
-if(likesFriedfood === 'yes'){
-  alert('My favorite fried foods are vegetables!');
-} else {
-  alert('What do you mean?!');
+function friedVeg(){
+  var likesFriedfood = prompt('Do you like Fried food?').toLowerCase();
+  userEntry(likesFriedfood);
+  if(likesFriedfood === 'yes'){
+    alert('My favorite fried foods are vegetables!');
+  } else {
+    alert('What do you mean?!');
+  }
 }
+
+friedVeg();
