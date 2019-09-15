@@ -28,6 +28,7 @@ frenchFry();
 function cheeseHam(){
   var likesBurgers = prompt('Are you a fan of Burgers?').toLowerCase();
   userEntry(likesBurgers);
+  console.log ('does the user like burgers ' + likesBurgers);
   if(likesBurgers === 'yes' || likesBurgers === 'y'|| likesBurgers === 'no' || likesBurgers === 'n'){
     alert('I like cheese burgers with double meat!');
   } else {
@@ -40,6 +41,7 @@ cheeseHam();
 function sourCream(){
   var likesMexfood = prompt('Do you like Mexican food?').toLowerCase();
   userEntry(likesMexfood);
+  console.log ('does the user like mexican foos ' + likesMexfood);
   if(likesMexfood === 'yes'|| likesMexfood === 'y'|| likesMexfood === 'no' || likesMexfood === 'n'){
     alert('My favorite dish is enchiladas');
   } else {
@@ -52,6 +54,7 @@ sourCream();
 function friedVeg(){
   var likesFriedfood = prompt('Do you like Fried food?').toLowerCase();
   userEntry(likesFriedfood);
+  console.log ('does the user like fried food ' + likesFriedfood);
   if(likesFriedfood === 'yes'|| likesFriedfood === 'y'|| likesFriedfood === 'no' || likesFriedfood === 'n'){
     alert('My favorite fried foods are vegetables!');
   } else {
